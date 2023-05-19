@@ -22,9 +22,10 @@ Scrimba M6 solo project - Learning Journal
 ### The challenge
 
 Requirements:
-- Homepage, two sizes
-- Article page, two sizes
-- About me page, two sizes
+- Homepage, mobile/desktop
+- Article page, mobile/desktop
+- About me page, mobile/desktop
+- each page has a header with logo and a footer
 
 - Build each page from "scratch"
 - Make all pages responsive
@@ -42,6 +43,10 @@ Stretch goals
 - JS show all but six posts, show all with "view more" link
 - responsive navigation displaying a "hamburger menu" on smaller screens
   - toggles navigation from closed to open
+
+Personal stretch goal
+- pull LinkedIn posts into this project
+[Next.js blog](https://strapi.io/starters/strapi-starter-next-js-blog)  
 
 [Figma file](https://www.figma.com/file/Ny8pJOEotrbZQ8i4u80iAS/Learning-Journal%2FBlog-(Copy)?node-id=0-1&t=5XaG2eBKgyfwxCyo-0)
 
