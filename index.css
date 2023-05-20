@@ -10,6 +10,7 @@ Date: May 2023
     
     /*COLORS*/
     --black: #000;
+    --dark-blue: #1e3b70;
     --dark-gray: #202020;
     --gray-text: #505050;
     --white: #fff;
@@ -51,6 +52,13 @@ h1 {
     font-size: var(--fs-m);
 }
 
+h3 {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: .5em;
+    border-radius: 5px;
+}
+
 p {
     color: var(--gray-text);
 }
@@ -73,11 +81,11 @@ a:hover {
 /* ====== HEADER ====== */
 
 header {
-    padding: 1.25em 1.5em;
+    padding: 1.5em 2em;
 }
 
 .header-container {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     
     display: flex;
     align-items: center;
@@ -125,7 +133,9 @@ li {
     font-size: var(--fs-xs);
 }
 
-.hero-title {
+.hero-title,
+.about-title,
+.about-subtitle {
     font-size: var(--fs-l);
 }
 
@@ -146,8 +156,11 @@ li {
 .posts-container {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2em 1.25em;
 
+}
+
+.posts-container {
+    padding: 2em 1.25em;
 }
 
 video {
@@ -178,9 +191,43 @@ video {
 .view-link {
     display: block;
     background-color: var(--gray-text);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-s);
+    font-weight: 700;
     text-align: center;
-    padding: 1em;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+/* ====== ABOUT PAGE ====== */
+
+.bio-container,
+.learning-container,
+.recent-posts-container {
+    padding: 1.5em 1.25em;
+}
+
+.bio-img {
+    display: block;
+    max-width: 350px;
+    background-color: antiquewhite;
+    margin: 0 auto 1.5em auto;
+    padding: 1em 1.5em 3em 1.5em;
+    border: 1px solid var(--dark-gray);
+}
+
+.about-subtitle {
+    margin-bottom: 1em;
+}
+
+.learn-title,
+.learn-description {
+    margin-bottom: 1em;
+}
+
+.recent-title {
+    background-color: var(--gray-text);
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 
