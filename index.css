@@ -10,7 +10,7 @@ Date: May 2023
     
     /*COLORS*/
     --black: #000;
-    --dark-blue: #1e3b70;
+    --dark-blue: #424195;
     --dark-gray: #202020;
     --gray-text: #505050;
     --white: #fff;
@@ -57,6 +57,7 @@ h3 {
     color: var(--white);
     padding: .5em;
     border-radius: 5px;
+    opacity: .90;
 }
 
 p {
@@ -74,14 +75,14 @@ a:visited {
 }
 
 a:hover {
-    color: red;
+    color: gold;
 }
 
 
 /* ====== HEADER ====== */
 
 header {
-    padding: 1.5em 2em;
+    padding: 1.5em 0;
 }
 
 .header-container {
@@ -109,18 +110,39 @@ button {
 
 .nav-list {
     /* display: none; */
-    background-color: var(--gray-text);
+    background-color: var(--dark-gray);
     text-align: right;
-    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5em;
     border-radius: 5px;
+    opacity: .85;
 }
 
 li {
     font-size: var(--fs-m);
+    margin: .25em 1em;
 }
 
 
 /* ====== HERO SECTION ====== */
+
+.hero-container,
+.about-hero-container {
+    background-color: #29539b;
+    background: no-repeat 100% 
+    url(assets/casserolecodes-banner.png);
+        /* linear-gradient(180deg, */
+         /* #29539b 0%,  */
+         /* #1e3b70 74%); */
+    padding: 3em 0 1.5em 0;
+    opacity: .85;
+
+}
+
+.hero-text {
+    max-width: 650px;
+}
 
 .hero-date,
 .hero-title,
@@ -139,28 +161,17 @@ li {
     font-size: var(--fs-l);
 }
 
-.hero-container {
-    background-color: #29539b;
-    background-image: linear-gradient(180deg, #29539b 0%, #1e3b70 74%);
-    padding: 3em 1.25em 1.5em 1.25em;
-}
-
-
 /* ====== LAYOUT ====== */
 
 .body-container {
     min-width: 320px;
-    background-color: var(--white);
+    background-color: whitesmoke;
 }
 
 .posts-container {
     display: grid;
     grid-template-columns: 1fr;
-
-}
-
-.posts-container {
-    padding: 2em 1.25em;
+    padding: 2em 0;
 }
 
 video {
@@ -188,22 +199,26 @@ video {
     margin-bottom: 2em;
 }
 
-.view-link {
+.view-btn {
+    min-width: 400px;
     display: block;
     background-color: var(--gray-text);
     font-size: var(--fs-s);
     font-weight: 700;
-    text-align: center;
+    color: var(--white);
     padding: .5em;
+    margin: 1em auto;
     border-radius: 5px;
 }
+
+
 
 /* ====== ABOUT PAGE ====== */
 
 .bio-container,
 .learning-container,
 .recent-posts-container {
-    padding: 1.5em 1.25em;
+    padding: 1.5em 0;
 }
 
 .bio-img {
@@ -213,21 +228,49 @@ video {
     margin: 0 auto 1.5em auto;
     padding: 1em 1.5em 3em 1.5em;
     border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+}
+
+.about-title,
+.about-subtitle {
+    font-size: var(--fs-l);
 }
 
 .about-subtitle {
+    color:gold;
     margin-bottom: 1em;
+}
+
+.about-description {
+    max-width: 800px;
+    font-size: var(--fs-xs);
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.learning-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .learn-title,
 .learn-description {
-    margin-bottom: 1em;
+    font-size: var(--fs-xs);
+    margin-bottom: 1.5em;
 }
 
 .recent-title {
+    max-width: 600px;
+    font-size: var(--fs-s);
+    font-weight: 700;
+    color: var(--white);
+    padding: .5em;
+    margin: 2em auto;
     background-color: var(--gray-text);
     text-align: center;
-    margin-bottom: 2em;
+    border-radius: 5px;
 }
 
 
@@ -244,3 +287,86 @@ footer {
     font-size: var(--fs-xs);
     text-align: center;
 }
+
+/* ====== UTILITY CLASS ====== */
+
+.utl-padding {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+/* ======= MEDIA QUERIES ======= */
+
+@media (min-width: 800px) {
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .hero-date,
+    .hero-description,
+    .post-date,
+    .post-description {
+    font-size: var(--fs-s);
+}
+
+    .hero-container {
+        padding: 8em 3.3125em 4em 3.3125em;
+    }
+  
+
+    .hero-title {
+        font-size: var(--fs-title);
+    }
+
+    .posts-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.625rem;
+    }
+
+    /* ==== ABOUT PAGE ==== */
+
+    .bio-img {
+        margin: 0;
+    }
+
+    .bio-container,
+    .about-hero-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+    }
+
+    .about-description,
+    .learn-title,
+    .learn-description {
+        font-size: var(--fs-s);
+    }
+
+    /* ==== UTILITY CLASS ====*/
+     
+    .utl-padding {
+        padding-left: 3.25em;
+        padding-right: 3.25em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .title {
+        font-size: var(--fs-title);
+    }
+
+    .nav-list {
+        font-size: var(--fs-l);
+   }
+}
+
