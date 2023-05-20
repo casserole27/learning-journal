@@ -35,13 +35,21 @@ Date: May 2023
             <div class="header-container">
 
             <h1 class="title">⭐ casseroleCodes</h1>
-            <button class="fa-solid fa-bars nav-btn"></button>
+            <button 
+                class="fa-solid fa-bars nav-btn" 
+                id="nav-btn"
+                aria-label="navigation menu">
+            </button>
              
             </div>
 
-            <nav class="nav-menu">
-                
-                <ul class="nav-list">
+            <nav 
+                class="nav-menu hidden"
+                id="nav-menu">
+                                
+                <ul 
+                    class="nav-list"
+                    id="nav-list">
                     <li><a href="index.html">home</a></li>
                     <li><a href="about.html">about</a></li>
                     <li><a href="https://www.clewisdev.com/">portfolio</a></li>
@@ -161,6 +169,10 @@ Date: May 2023
         </main>
 
     </div> <!--close body container-->
-    
+
+       
 </body>
+
+<script src="index.js" type="module"></script>
+
 </html>
