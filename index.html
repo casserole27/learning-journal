@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--    
+Author: Cassie Lewis
+https://clewisdev.com
+Date: May 2023
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +15,7 @@
         <!--GOOGLE FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- FONT AWESOME CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
@@ -27,26 +32,22 @@
         
         <header>
 
-            <h1 class="title">⭐ casseroleCodes</h1>
+            <div class="header-container">
 
-            <nav>
+            <h1 class="title">⭐ casseroleCodes</h1>
+            <button class="fa-solid fa-bars nav-btn"></button>
+             
+            </div>
+
+            <nav class="nav-menu">
                 
-                <button class="fa-solid fa-bars"></button>
-                
-                <ul>
-                    <li>
-                        <a href="index.html">home</a>
-                        </li>
-                    <li>
-                        <a href="about.html">about</a>
-                        </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/clewisdev/">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://www.clewisdev.com/">portfolio</a>
-                    </li>    
+                <ul class="nav-list">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="https://www.clewisdev.com/">portfolio</a></li>
+                    <li><a href="https://www.linkedin.com/in/clewisdev/" target="_blank">LinkedIn</a></li>    
                 </ul>
+            
             </nav>
 
         </header>
@@ -59,7 +60,7 @@
                 
                 <h2 class="hero-title">My journey as a bootcamp student.</h2>
                 
-                <p class="hero-desc">
+                <p class="hero-description">
                     This past January, I joined the Scrimba Frontend 
                     Development bootcamp and carrer path to get expert
                     code reviews of my Solo Projects and meet like-minded peers.
@@ -74,9 +75,14 @@
                     <video controls>
                     <source src="assets/videos/invoice-creator.mp4" type="video/mp4">
                     </video>    
-                    <p>May 20, 2023</p>
-                    <h3>Invoice Creator</h3>
-                    <p>Module 5 bootcamp project.</p>
+                    <p class="post-date">May 20, 2023</p>
+                    <h3 class="post-title">Invoice Creator</h3>
+                    <p class="post-description">
+                        Half-wits delaying confess traitors meet worm moon secure 
+                        slowly faint working Fangorn. Troubles J.R.R. Tolkien dung sorcerer? 
+                        There and Back Again. A Hobbit's Tale. Nearing proposition threat roof 
+                        oil tend Edge gateway invited.
+                    </p>
 
                 </article>
 
@@ -85,9 +91,14 @@
                     <video controls>
                     <source src="assets/videos/march-madness.mp4" type="video/mp4">
                     </video>    
-                    <p>May 20, 2023</p>
-                    <h3>March Madness Challenge</h3>
-                    <p>Four projects in four weeks.</p>
+                    <p class="post-date">May 20, 2023</p>
+                    <h3 class="post-title">March Madness Challenge</h3>
+                    <p class="post-description">
+                        Half-wits delaying confess traitors meet worm moon secure 
+                        slowly faint working Fangorn. Troubles J.R.R. Tolkien dung sorcerer? 
+                        There and Back Again. A Hobbit's Tale. Nearing proposition threat roof 
+                        oil tend Edge gateway invited.
+                    </p>
 
                 </article>
 
@@ -96,9 +107,14 @@
                     <video controls>
                     <source src="assets/videos/unit-converter.mp4" type="video/mp4">
                     </video>    
-                    <p>May 20, 2023</p>
-                    <h3>Unit Converter</h3>
-                    <p>Module 3 solo project</p>
+                    <p class="post-date">May 20, 2023</p>
+                    <h3 class="post-title">Unit Converter</h3>
+                    <p class="post-description">
+                        Half-wits delaying confess traitors meet worm moon secure 
+                        slowly faint working Fangorn. Troubles J.R.R. Tolkien dung sorcerer? 
+                        There and Back Again. A Hobbit's Tale. Nearing proposition threat roof 
+                        oil tend Edge gateway invited.
+                    </p>
 
                 </article>
 
@@ -107,10 +123,15 @@
                     <video controls>
                     <source src="assets/videos/Star Wars Day.mp4" type="video/mp4">
                     </video>    
-                    <p>May 20, 2023</p>
-                    <h3>Darth Vader Quote Generator</h3>
-                    <h3>via LewisLabs</h3>
-                    <p>First attempt at CSS art and other unique projects.</p>
+                    <p class="post-date">May 20, 2023</p>
+                    <h3 class="post-title">Darth Vader Quote Generator</h3>
+                    <h3 class="post-title">via LewisLabs</h3>
+                    <p class="post-description">
+                        Half-wits delaying confess traitors meet worm moon secure 
+                        slowly faint working Fangorn. Troubles J.R.R. Tolkien dung sorcerer? 
+                        There and Back Again. A Hobbit's Tale. Nearing proposition threat roof 
+                        oil tend Edge gateway invited.
+                    </p>
 
                 </article>
 
@@ -119,65 +140,18 @@
                     <video controls>
                     <source src="assets/videos/portfolio-walkthru.mp4" type="video/mp4">
                     </video>    
-                    <p>May 20, 2023</p>
-                    <h3>Portfolio Evolution Walk-Thru</h3>
-                    <p>Devsite portfolio</p>
+                    <p class="post-date">May 20, 2023</p>
+                    <h3 class="post-title">Portfolio Evolution Walk-Thru</h3>
+                    <p class="post-description">
+                        Half-wits delaying confess traitors meet worm moon secure 
+                        slowly faint working Fangorn. Troubles J.R.R. Tolkien dung sorcerer? 
+                        There and Back Again. A Hobbit's Tale. Nearing proposition threat roof 
+                        oil tend Edge gateway invited.
+                    </p>
 
                 </article>
 
-                <!-- <article class="post">
-
-                    <img src="assets/invoice-creator.png" alt="">
-                    <p>May 20, 2023</p>
-                    <h3>Invoice Creator</h3>
-                    <p>Module 5 bootcamp project.</p>
-
-                </article> -->
-        
-                <!-- <article class="post">
-
-                    <img src="assets/unit-converter.png" alt="">  
-                    <p>May 20, 2023</p>
-                    <h3>Unit Converter</h3>
-                    <p>Module 3 solo project.</p>
-        
-                </article>
-
-                <article class="post">
-
-                    <img src="assets/password-generator.png" alt="">  
-                    <p>May 20, 2023</p>
-                    <h3>Password Generator</h3>
-                    <p>Module 3 solo project.</p>
-        
-                </article>
-
-                <article class="post">
-
-                    <img src="assets/darth-quote.png" alt="">  
-                    <p>May 20, 2023</p>
-                    <h3>Darth Vader Quote Generator</h3>
-                    <p>First attempt at CSS art.</p>
-        
-                </article>
-
-                <article class="post">
-
-                    <img src="assets/catan-scorekeeper.png" alt="">  
-                    <p>May 20, 2023</p>
-                    <h3>Settlers of Catan Scorekeeper</h3>
-                    <p>Module 3 solo project.</p>
-        
-                </article>
-
-                <article class="post">
-
-                    <img src="assets/devsite.png" alt="">  
-                    <p>May 20, 2023</p>
-                    <h3>Portfolio Website</h3>
-                    <p>Designed and developed from scratch.</p>
-        
-                </article> -->
+                <a href="#" class="view-link">View More</a>
 
             </section>
 
@@ -185,7 +159,7 @@
 
         <footer>
             
-            <p>casseroleCodes 2023</p>
+            <p class="footer-text">© casseroleCodes 2023</p>
         
         </footer>
     
