@@ -1,12 +1,7 @@
 /*
 Author: Cassie Lewis
 https://clewisdev.com
-Date: 
-*/
-
-/*
-COOLORS color palette link
-https://coolors.co
+Date: May 2023
 */
 
 /****** VARIABLES ******/
@@ -14,7 +9,10 @@ https://coolors.co
 :root {
     
     /*COLORS*/
-  
+    --black: #000;
+    --dark-gray: #202020;
+    --gray-text: #505050;
+    --white: #fff;
     
     /*BORDER RADIUS*/
     --br-soft: 1rem;
@@ -24,11 +22,12 @@ https://coolors.co
     --fs-xs: 1rem;
     --fs-s: 1.25rem;
     --fs-m: 1.5rem;
-    --fs-l: 2.25rem;
+    --fs-l: 2rem;
     --fs-title: 2.5rem;
 }
 
-/****** MARGIN AND PADDING RESET ******/
+
+/* ====== MARGIN AND PADDING RESET ====== */
 
 * {
     margin: 0;
@@ -36,8 +35,165 @@ https://coolors.co
     box-sizing: border-box;
 }
 
-/******* GLOBAL STYLES *******/
+
+/* ======= GLOBAL STYLES ======*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--dark-gray);
+    
+    display: flex;
+    justify-content: center;
+}
 
 h1 {
     color: red;
+    font-size: var(--fs-m);
+}
+
+p {
+    color: var(--gray-text);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* ====== HEADER ====== */
+
+header {
+    padding: 1.25em 1.5em;
+}
+
+.header-container {
+    margin-bottom: .5em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+button {
+    background-color: var(--white);
+    border: none;
+}
+
+.nav-btn {
+    font-size: var(--fs-l);
+    transition: transform 3s ease-in;
+}
+
+.active-btn {
+    transform: rotate(90deg);
+}
+
+.nav-list {
+    /* display: none; */
+    background-color: var(--gray-text);
+    text-align: right;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+li {
+    font-size: var(--fs-m);
+}
+
+
+/* ====== HERO SECTION ====== */
+
+.hero-date,
+.hero-title,
+.hero-description {
+    color: var(--white);
+}
+
+.hero-date,
+.hero-description {
+    font-size: var(--fs-xs);
+}
+
+.hero-title {
+    font-size: var(--fs-l);
+}
+
+.hero-container {
+    background-color: #29539b;
+    background-image: linear-gradient(180deg, #29539b 0%, #1e3b70 74%);
+    padding: 3em 1.25em 1.5em 1.25em;
+}
+
+
+/* ====== LAYOUT ====== */
+
+.body-container {
+    min-width: 320px;
+    background-color: var(--white);
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em 1.25em;
+
+}
+
+video {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.post-date,
+.post-title,
+.hero-date,
+.hero-title {
+    margin-bottom: .5625em;
+}
+
+.post-title {
+    font-size: var(--fs-m);
+}
+
+.post-date,
+.post-description {
+    font-size: var(--fs-xs);
+}
+
+.post-description {
+    margin-bottom: 2em;
+}
+
+.view-link {
+    display: block;
+    background-color: var(--gray-text);
+    font-size: var(--fs-xs);
+    text-align: center;
+    padding: 1em;
+}
+
+
+/* ====== FOOTER ====== */
+
+footer {
+    background-color: var(--dark-gray);
+    padding: 2em 5em;
+    border: 2px solid white;
+}
+
+.footer-text {
+    color: var(--white);
+    font-size: var(--fs-xs);
+    text-align: center;
 }
