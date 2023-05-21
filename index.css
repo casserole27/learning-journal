@@ -317,6 +317,10 @@ footer {
         display: none;
     }
 
+    .nav-menu {
+        display: block;
+    }
+
     .nav-list {
         width: 100%;
     }
