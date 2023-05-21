@@ -305,8 +305,12 @@ footer {
     transform: rotate(90deg);
 }
 
+@media (max-width: 799px) {
+
 .hidden {
     display: none;
+}
+
 }
 
 /* ======= MEDIA QUERIES ======= */
