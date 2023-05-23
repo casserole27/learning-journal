@@ -131,7 +131,7 @@ li {
 }
 
 .hero-text {
-    max-width: 650px;
+    max-width: 800px;
 }
 
 .hero-date,
@@ -284,6 +284,16 @@ video {
     margin-bottom: 1.5em;
 }
 
+.wp-link {
+    display: block;
+    background-color: var(--red);
+    text-align: center;
+    font-weight: 700;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    border-radius: 5px; 
+}
+
 .recent-title {
     max-width: 600px;
     font-size: var(--fs-s);
@@ -394,7 +404,8 @@ footer {
 
     .about-description,
     .learn-title,
-    .learn-description {
+    .learn-description,
+    .wp-link {
         font-size: var(--fs-s);
     }
 

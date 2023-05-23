@@ -16,7 +16,7 @@ function showNavMenu() {
 
 function showMorePosts() {
     const posts = document.querySelectorAll('article');
-    posts.forEach((post) => {
+    posts.forEach(post => {
         post.classList.remove('hidden-post')
     })
 
@@ -28,3 +28,5 @@ function showMorePosts() {
 
 navBtn.addEventListener('click', showNavMenu);
 viewBtn.addEventListener('click', showMorePosts)
+    
+
