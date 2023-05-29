@@ -54,13 +54,35 @@ Personal stretch goal
 
 ### Screenshot
 
-![screenshot](#)
+<h2>Scratch Site Desktop</h2>
 
 ![Scratch Site Desktop](assets/screenshots/learning-journal-desktop.png)
+
+<br>
+
+<h2>Scratch Site Mobile </h2>
+
 ![Scratch Site Mobile](assets/screenshots/learning-journal-mobile.png)
+
+<br>
+
+<h2>Scratch Site Mobile Hamburger Menu</h2>
+
 ![Scratch Site Mobile Hamburger Menu](assets/screenshots/learning-journal-mobile-hamburger.png)
+
+<br>
+
+<h2>WordPress Site Desktop</h2>
+
 ![WordPress Site Desktop](assets/screenshots/learning-journal-WP-desktop.png)
+
+<br>
+
+<h2>WordPress Site Mobile</h2>
+
 ![WordPress Site Mobile](assets/screenshots/learning-journal-WP-mobile.png)
+
+<br>
 
 ### Links
 
