@@ -11,7 +11,6 @@ const viewBtn = document.getElementById('view-btn');
 function showNavMenu() {
     navMenu.classList.toggle('hidden');
     navBtn.classList.toggle('active-btn');
-    console.log('button clicked')    
 };
 
 function showMorePosts() {

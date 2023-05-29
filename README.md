@@ -8,6 +8,7 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [UI/UX and Accessiblity Notes](#UI-UX-and-accessibility)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -45,8 +46,9 @@ Stretch goals
   - toggles navigation from closed to open
 
 Personal stretch goal
-- pull LinkedIn posts into this project
-[Next.js blog](https://strapi.io/starters/strapi-starter-next-js-blog)  
+- built both scratch site and WordPress.org site
+- use personal brand
+- use #buildinginpublic content from LinkedIn: videos and basic text 
 
 [Figma file](https://www.figma.com/file/Ny8pJOEotrbZQ8i4u80iAS/Learning-Journal%2FBlog-(Copy)?node-id=0-1&t=5XaG2eBKgyfwxCyo-0)
 
@@ -54,11 +56,18 @@ Personal stretch goal
 
 ![screenshot](#)
 
+![Scratch Site Desktop](assets/screenshots/learning-journal-desktop.png)
+![Scratch Site Mobile](assets/screenshots/learning-journal-mobile.png)
+![Scratch Site Mobile Hamburger Menu](assets/screenshots/learning-journal-mobile-hamburger.png)
+![WordPress Site Desktop](assets/screenshots/learning-journal-WP-desktop.png)
+![WordPress Site Mobile](assets/screenshots/learning-journal-WP-mobile.png)
+
 ### Links
 
 [Scrim](https://scrimba.com/scrim/co7274bc782bb9c0e125aa76b)s
 [Github](https://github.com/casserole27/learning-jounral)
-[Live Site](#)
+[Live Site](https://www.clewisdev.com/learning-journal/)
+[WordPress Site](https://casserolecodes.com/)
 
 ## My process
 
@@ -76,13 +85,33 @@ Personal stretch goal
 
 ### Built with
 
+- semantic HTML5
 - CSS custom properties
-- Responsive Web Design
+- Responsive Web Design and Media Queries
+- CSS flexbox
+- CSS grid
+- vanilla JavaScript
 
 ### What I learned
 
+- I attempted to build on WordPress.org with my existing HTML and CSS
+  - On the index page, I tried to apply all of the HTML file using the classic editor
+  - On the about page, I added HTML with various blocks
+  - I added CSS through customize
+  - It is difficult to overwrite them headers, footers, menus, etc if you want to use your own
+  - I used chatGPT to walk me through adding JS to WP, which involves adding your JS file to the directory and a PHP file
+
+### UI/UX and Accessibility
+
+- I learned that my walk-through videos would not portray my projects to all users, especially those with visual impairments
+  - the way it is structured, there are no captions or anything that can be pulled into a transcript
+- Accessibility for videos is a bit more complicated than adding an alt image tag.
+  - It is better to add a more accessible player to your code rather than the default HTML player
+
 ### Continued development
 
+- I would like to be able to add additional posts by rendering in JavaScript, at least on the scratch site, either using a data file or Classes.
+- I would like to learn more about site optimization, my hero image and videos take a while to load.
 
 ### Useful resources
 
