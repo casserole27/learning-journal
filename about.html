@@ -50,10 +50,14 @@ Date: May 2023
                 <ul 
                     class="nav-list"
                     id="nav-list">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="https://www.clewisdev.com/">portfolio</a></li>
-                    <li><a href="https://www.linkedin.com/in/clewisdev/" target="_blank">LinkedIn</a></li>    
+                    <li class="nav-li"><a href="index.html">home</a></li>
+                    <li class="nav-li"><a href="about.html">about</a></li>
+                    <li class="nav-li"><a href="https://clewisdev.com">portfolio</a></li>
+                    <!-- <li class="nav-li"><a href="newprojects.html">projects</a></li> -->
+                    <!-- <li class="nav-li"><a href="lewislabs.html">lewislabs</a></li>     -->
+                    <li class="nav-li"><a href="index.html">github</a></li>
+                    <li class="nav-li"><a href="https://www.linkedin.com/in/clewisdev/" target="_blank">LinkedIn</a></li>    
+                    <li class="nav-li"><a href="images/01-CASSIE-LEWIS-DEV-RESUME-1.pdf" id="resume" target="_blank">resume</a></li>   
                 </ul>
             
             </nav>
@@ -99,37 +103,44 @@ Date: May 2023
 
                 <article class="learn-info">
 
-                    <h3 class="learn-title">How I stay committed to learning</h3>
-
-                    <p class="learn-description">
-                        One of my fundamental values is personal growth and learning, which naturally led me to pursue self-taught web development. It's truly remarkable what we can accomplish when we strike the right balance between focus, determination, and consistency. To achieve this balance and continuously improve my skills, I employ and fine-tune learning systems while also ensuring a healthy work-life equilibrium.     
-                    </p>    
+                    <button class="learn-title-btn accordion">How I stay committed to learning</button>
+                    <div class="panel">
+                        <p class="learn-description">
+                            One of my fundamental values is personal growth and learning, which naturally led me to pursue self-taught web development. It's truly remarkable what we can accomplish when we strike the right balance between focus, determination, and consistency. To achieve this balance and continuously improve my skills, I employ and fine-tune learning systems while also ensuring a healthy work-life equilibrium.     
+                        </p>
+                    </div>    
                             
                 </article>
                 
                 <article class="learn-info">
                         
-                    <h3 class="learn-title">How I got started</h3>
-
-                    <p class="learn-description">
-                        I began blogging on WordPress, and as someone who is naturally curious about how things work, creating these websites motivated me to learn coding from scratch. My goal was to develop the skills needed to create clean-coded applications, impactful UI/UX designs and ensure accessibility. In addition to joining the Scrimba bootcamp, I have also completed online courses offered by LinkedIn Learning, freeCodeCamp, and Codecademy.
-                    </p>
+                    <button class="learn-title-btn accordion">How I got started</button>
                     
-                    <h3 class="learn-title">The Learning Journal Project</h3>
+                    <div class="panel">
+                        <p class="learn-description">
+                            I began blogging on WordPress, and as someone who is naturally curious about how things work, creating these websites motivated me to learn coding from scratch. My goal was to develop the skills needed to create clean-coded applications, impactful UI/UX designs and ensure accessibility. In addition to joining the Scrimba bootcamp, I have also completed online courses offered by LinkedIn Learning, freeCodeCamp, and Codecademy.
+                        </p>
+                    </div>
                     
-                    <p class="learn-description">    
-                        To familiarize myself with WordPress and content management systems (CMS), I built this site in two ways: from scratch on VS Code using Github, and using the WordPress.org engine. For the homepage, I copied all the code from my HTML index file. As for the about page, I utilized different blocks in the block editor to insert HTML. To customize the site, I utilized the “add additional CSS” feature and incorporated my own CSS while also making edits to the default CSS provided by the theme. While I retained the WP theme’s header, I created my own header and hamburger menu for the scratch version. 
-                    </p>
+                    <button class="learn-title-btn">The Learning Journal Project</button>
+                    
+                    <div class="panel">
+                        <p class="learn-description">    
+                            To familiarize myself with WordPress and content management systems (CMS), I built this site in two ways: from scratch on VS Code using Github, and using the WordPress.org engine. For the homepage, I copied all the code from my HTML index file. As for the about page, I utilized different blocks in the block editor to insert HTML. To customize the site, I utilized the “add additional CSS” feature and incorporated my own CSS while also making edits to the default CSS provided by the theme. While I retained the WP theme’s header, I created my own header and hamburger menu for the scratch version. 
+                        </p>
+                    
+                        <a href="https://casserolecodes.com/" class="wp-link" target="_blank">Learning Journal WordPress Site</a>
+   
 
-                    <a href="https://casserolecodes.com/" class="wp-link" target="_blank">Learning Journal WordPress Site</a>
+                        <p class="learn-description">    
+                            With guidance from chatGPT, I learned how to integrate JavaScript into my WordPress site. This involved adding my JS file to the theme's directory and incorporating additional code into one of the theme's PHP files.
+                        </p>
 
-                    <p class="learn-description">    
-                        With guidance from chatGPT, I learned how to integrate JavaScript into my WordPress site. This involved adding my JS file to the theme's directory and incorporating additional code into one of the theme's PHP files.
-                    </p>
+                        <p class="learn-description">    
+                            Furthermore, I began studying how to ensure video accessibility through the <a href=”https://www.w3.org/WAI/media/av”>W3C's</a> guidelines. I discovered that video accessibility is more complex than simply adding an alt tag to images, and it suggests utilizing more accessible players than what the default HTML video tag provides. Armed with this knowledge, I plan to update the project to make it more inclusive.
+                        </p>
 
-                    <p class="learn-description">    
-                        Furthermore, I began studying how to ensure video accessibility through the <a href=”https://www.w3.org/WAI/media/av”>W3C's</a> guidelines. I discovered that video accessibility is more complex than simply adding an alt tag to images, and it suggests utilizing more accessible players than what the default HTML video tag provides. Armed with this knowledge, I plan to update the project to make it more inclusive.
-                    </p>
+                    </div>
                     
                 </article>
 
@@ -137,65 +148,9 @@ Date: May 2023
 
             <h3 class="recent-title">Recent posts</h3>
 
-            <section class="posts-container utl-padding">
+            <section class="posts-container utl-padding" id="recent-posts-container"></section>
                     
-                    <article class="post">
-
-                        <video controls>
-                        <source src="assets/videos/invoice-creator.mp4" type="video/mp4">
-                        </video>    
-                        <p class="post-date">May 20, 2023</p>
-                        <h3 class="post-title">Invoice Creator</h3>
-                        <p class="post-description">
-                            This was a great exercise in manipulating user input data, 
-                            converting it to an array of objects, 
-                            and then rendering and manipulating that data. 
-                            I also added some UX enhancements to direct users 
-                            if they enter an invalid entry: blank inputs, 
-                            duplicate tasks, and entering tasks without a price.
-                        </p>
-    
-                    </article>
-
-                    <article class="post">
-
-                        <video controls>
-                        <source src="assets/videos/march-madness.mp4" type="video/mp4">
-                        </video>    
-                        <p class="post-date">March 2023</p>
-                        <h3 class="post-title">March Madness Challenge</h3>
-                        <p class="post-description">
-                            Four projects in four weeks!
-                            <br>
-                            💣 Embracing failure : while I did not bomb my challenge, 
-                            I did a whole lot of failing at JavaScript. 
-                            My biggest takeaway from this is to set time limits on problems, 
-                            step away from them and come back, and then ask for help. 
-                            At one point I was able to solve an ongoing problem in five minutes 
-                            just by giving it a day!
-                        </p>
-    
-                    </article>
-
-                    <article class="post">
-
-                        <video controls>
-                        <source src="assets/videos/portfolio-walkthru.mp4" type="video/mp4">
-                        </video>    
-                        <p class="post-date">January 2023 - present</p>
-                        <h3 class="post-title">Portfolio Evolution Walk-Thru</h3>
-                        <p class="post-description">
-                            This is made with HTML and CSS, and I'm sure I'll want to change
-                             it again once I get further into JavaScript and React. It's designed 
-                             to grow with the Scrimba frontend developer career path 
-                             as I move through the modules.
-                        </p>
-    
-                    </article>
-
-            </section>
-
-            <!-- <button class="view-btn">View More</button> -->
+          6  <!-- <button class="view-btn">View More</button> -->
 
             <footer>
             
@@ -213,3 +168,7 @@ Date: May 2023
 <script src="index.js" type="module"></script>
 
 </html>
+
+<!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
+<!-- Sidenav https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+
