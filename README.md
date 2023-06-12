@@ -86,10 +86,10 @@ Personal stretch goal
 
 ### Links
 
-[Scrim](https://scrimba.com/scrim/co7274bc782bb9c0e125aa76b)s
-[Github](https://github.com/casserole27/learning-jounral)
-[Live Site](https://www.clewisdev.com/learning-journal/)
-[WordPress Site](https://casserolecodes.com/)
+-[Scrim](https://scrimba.com/scrim/co7274bc782bb9c0e125aa76b)s
+-[Github](https://github.com/casserole27/learning-jounral)
+-[Live Site](https://www.clewisdev.com/learning-journal/)
+-[WordPress Site](https://casserolecodes.com/)
 
 ## My process
 
@@ -123,6 +123,30 @@ Personal stretch goal
   - It is difficult to overwrite them headers, footers, menus, etc if you want to use your own
   - I used chatGPT to walk me through adding JS to WP, which involves adding your JS file to the directory and a PHP file
 
+ - HTML details tag
+ ```html 
+      <details> <!--this makes a simple accordion menu without JS --->
+          <summary class="learn-title">
+              <h3>How I stay committed to learning</h3>
+          </summary>    
+          <p class="panel">
+              One of my fundamental values is personal growth and learning, which naturally led me to pursue self-taught web development. It's truly remarkable what we can accomplish when we strike the right balance between focus, determination, and consistency. To achieve this balance and continuously improve my skills, I employ and fine-tune learning systems while also ensuring a healthy work-life equilibrium.     
+          </p>
+      </details> 
+```  
+
+<h2>HTML details element</h2>
+
+![closed](assets/screenshots/html-details-closed.png)
+
+<br>
+
+<h2>HTML details element</h2>
+
+![open](assets/screenshots/html-details-open.png)
+
+<br>
+
 ### UI/UX and Accessibility
 
 - I learned that my walk-through videos would not portray my projects to all users, especially those with visual impairments
@@ -132,13 +156,14 @@ Personal stretch goal
 
 ### Continued development
 
-- I would like to be able to add additional posts by rendering in JavaScript, at least on the scratch site, either using a data file or Classes.
+- I would like to be able to add additional posts by rendering in JavaScript, at least on the scratch site, either using a data file or Classes - completed!
 - I would like to learn more about site optimization, my hero image and videos take a while to load.
 
 ### Useful resources
 
-[Scrimba help](https://different-marmoset-f7b.notion.site/Learning-Journal-cbe9e2728d6149e0b3efbb1f139be122)
-
+- [Scrimba help](https://different-marmoset-f7b.notion.site/Learning-Journal-cbe9e2728d6149e0b3efbb1f139be122)
+- [HTML details tag](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_details)
+- [Styling details element issues](https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/)
 
 ## Author
 
