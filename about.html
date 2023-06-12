@@ -51,7 +51,7 @@ Date: May 2023
                     class="nav-list"
                     id="nav-list">
                     <li class="nav-li"><a href="index.html">home</a></li>
-                    <li class="nav-li"><a href="about.html">about</a></li>
+                    <!-- <li class="nav-li"><a href="about.html">about</a></li> -->
                     <li class="nav-li"><a href="https://clewisdev.com">portfolio</a></li>
                     <!-- <li class="nav-li"><a href="newprojects.html">projects</a></li> -->
                     <!-- <li class="nav-li"><a href="lewislabs.html">lewislabs</a></li>     -->
@@ -103,45 +103,51 @@ Date: May 2023
 
                 <article class="learn-info">
 
-                    <button class="learn-title-btn accordion">How I stay committed to learning</button>
-                    <div class="panel">
-                        <p class="learn-description">
+                    <details>
+                        <summary class="learn-title">
+                            <h3>How I stay committed to learning</h3>
+                        </summary>    
+                        <p class="panel">
                             One of my fundamental values is personal growth and learning, which naturally led me to pursue self-taught web development. It's truly remarkable what we can accomplish when we strike the right balance between focus, determination, and consistency. To achieve this balance and continuously improve my skills, I employ and fine-tune learning systems while also ensuring a healthy work-life equilibrium.     
                         </p>
-                    </div>    
+                    </details> 
                             
                 </article>
                 
                 <article class="learn-info">
                         
-                    <button class="learn-title-btn accordion">How I got started</button>
-                    
-                    <div class="panel">
-                        <p class="learn-description">
+                    <details>
+                        <summary class="learn-title">
+                            <h3>How I got started</h3>
+                        </summary> 
+                        <p class="panel">
                             I began blogging on WordPress, and as someone who is naturally curious about how things work, creating these websites motivated me to learn coding from scratch. My goal was to develop the skills needed to create clean-coded applications, impactful UI/UX designs and ensure accessibility. In addition to joining the Scrimba bootcamp, I have also completed online courses offered by LinkedIn Learning, freeCodeCamp, and Codecademy.
                         </p>
-                    </div>
+                    </details>
                     
-                    <button class="learn-title-btn">The Learning Journal Project</button>
+                    <details>
+                        <summary class="learn-title">
+                            <h3>The Learning Journal Project</h3>
+                        </summary>  
+                        <div class="panel"> 
+                            <p>    
+                                To familiarize myself with WordPress and content management systems (CMS), I built this site in two ways: from scratch on VS Code using Github, and using the WordPress.org engine. For the homepage, I copied all the code from my HTML index file. As for the about page, I utilized different blocks in the block editor to insert HTML. To customize the site, I utilized the “add additional CSS” feature and incorporated my own CSS while also making edits to the default CSS provided by the theme. While I retained the WP theme’s header, I created my own header and hamburger menu for the scratch version. 
+                            </p>
                     
-                    <div class="panel">
-                        <p class="learn-description">    
-                            To familiarize myself with WordPress and content management systems (CMS), I built this site in two ways: from scratch on VS Code using Github, and using the WordPress.org engine. For the homepage, I copied all the code from my HTML index file. As for the about page, I utilized different blocks in the block editor to insert HTML. To customize the site, I utilized the “add additional CSS” feature and incorporated my own CSS while also making edits to the default CSS provided by the theme. While I retained the WP theme’s header, I created my own header and hamburger menu for the scratch version. 
-                        </p>
-                    
-                        <a href="https://casserolecodes.com/" class="wp-link" target="_blank">Learning Journal WordPress Site</a>
+                            <a href="https://casserolecodes.com/" class="wp-link" target="_blank">Learning Journal WordPress Site</a>
    
 
-                        <p class="learn-description">    
-                            With guidance from chatGPT, I learned how to integrate JavaScript into my WordPress site. This involved adding my JS file to the theme's directory and incorporating additional code into one of the theme's PHP files.
-                        </p>
+                            <p>    
+                                With guidance from chatGPT, I learned how to integrate JavaScript into my WordPress site. This involved adding my JS file to the theme's directory and incorporating additional code into one of the theme's PHP files.
+                            </p>
 
-                        <p class="learn-description">    
-                            Furthermore, I began studying how to ensure video accessibility through the <a href=”https://www.w3.org/WAI/media/av”>W3C's</a> guidelines. I discovered that video accessibility is more complex than simply adding an alt tag to images, and it suggests utilizing more accessible players than what the default HTML video tag provides. Armed with this knowledge, I plan to update the project to make it more inclusive.
-                        </p>
+                            <p>    
+                                Furthermore, I began studying how to ensure video accessibility through the <a href=”https://www.w3.org/WAI/media/av”>W3C's</a> guidelines. I discovered that video accessibility is more complex than simply adding an alt tag to images, and it suggests utilizing more accessible players than what the default HTML video tag provides. Armed with this knowledge, I plan to update the project to make it more inclusive.
+                            </p>
+                        </div>
+                    </details>
+                        
 
-                    </div>
-                    
                 </article>
 
             </section>
