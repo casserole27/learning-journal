@@ -283,7 +283,7 @@ details summary > * {
 .learn-title { 
     width: 100%;
     font-family: inherit;
-    font-size: var(--fs-s);
+    font-size: var(--fs-xs);
     background-color: var(--dark-blue);
     color: var(--whitesmoke);
     padding: 1em;
@@ -298,7 +298,7 @@ details summary > * {
     font-family: inherit;
     background-color: var(--dark-gray);
     color: var(--whitesmoke);
-    font-size: var(--fs-s);
+    font-size: var(--fs-xs);
     font-weight: 400;
     padding: .5em 1em;
     margin-bottom: 1em;
@@ -431,6 +431,7 @@ footer {
 
     .about-description,
     .learn-title,
+    .panel,
     .learn-description,
     .wp-link {
         font-size: var(--fs-s);
