@@ -286,7 +286,7 @@ details summary > * {
     font-size: var(--fs-s);
     background-color: var(--dark-blue);
     color: var(--whitesmoke);
-    padding: .5em;
+    padding: 1em;
     margin-bottom: 1em;
     border-radius: 5px;
     opacity: .90;
