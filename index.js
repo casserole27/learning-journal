@@ -8,9 +8,9 @@ const viewBtn = document.getElementById('view-btn');
 
 /****** FUNCTIONS ******/
 
-function renderRecentVideos() {
+function renderVideos(data, containerId) {
     let videoFeed = '';
-    recentVideoData.forEach(video => {
+    data.forEach(video => {
         videoFeed +=`
         <article class="post">
 
@@ -24,30 +24,11 @@ function renderRecentVideos() {
         </article>
         `
     });
-    document.getElementById('recent-posts-container').innerHTML = videoFeed;
-
-};
-
-renderRecentVideos();
-
-function renderVideos() {
-    let videoFeed = '';
-    videoData.forEach(video => {
-        videoFeed +=`
-        <article class="post">
-
-            <video controls>
-            <source src="${video.video}" type="video/mp4">
-            </video>    
-            <p class="post-date"${video.date}</p>
-            <h3 class="post-title">${video.title}</h3>
-            <p class="post-description">${video.description}</p>
-        
-        </article>
-        `
-    });
-    document.getElementById('posts-container').innerHTML = videoFeed;
+    document.getElementById(containerId).innerHTML = videoFeed;
 }
+
+renderVideos(recentVideoData, 'recent-posts-container');
+
 
 function showNavMenu() {
     navMenu.classList.toggle('hidden');
@@ -58,7 +39,7 @@ function showNavMenu() {
 
 navBtn.addEventListener('click', showNavMenu);
 viewBtn.addEventListener('click', () => {
-    renderVideos()
+    renderVideos(videoData, 'posts-container');
     viewBtn.classList.add('hidden-btn');
 });
     

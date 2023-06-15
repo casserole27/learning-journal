@@ -159,6 +159,33 @@ Personal stretch goal
 - I would like to be able to add additional posts by rendering in JavaScript, at least on the scratch site, either using a data file or Classes - completed!
 - I would like to learn more about site optimization, my hero image and videos take a while to load.
 
+- Code reviewer notes:
+  - add transition to button via CSS
+  - In JS, combine functions for DRYer code.
+  - This was originally two separate functions, combined using parameters.
+```javascript
+function renderVideos(data, containerId) {
+    let videoFeed = '';
+    data.forEach(video => {
+        videoFeed +=`
+        <article class="post">
+
+            <video controls>
+            <source src="${video.video}" type="video/mp4">
+            </video>    
+            <p class="post-date"${video.date}</p>
+            <h3 class="post-title">${video.title}</h3>
+            <p class="post-description">${video.description}</p>
+        
+        </article>
+        `
+    });
+    document.getElementById(containerId).innerHTML = videoFeed;
+}
+```
+  - Also possible to add isRecent key to data in order to have one array.
+
+
 ### Useful resources
 
 - [Scrimba help](https://different-marmoset-f7b.notion.site/Learning-Journal-cbe9e2728d6149e0b3efbb1f139be122)

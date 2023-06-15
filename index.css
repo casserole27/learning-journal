@@ -71,6 +71,7 @@ a,
 a:visited {
     color: var(--whitesmoke);
     text-decoration: none;
+    transition: 0.5s;
 }
 
 a:hover {
@@ -210,11 +211,22 @@ video {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.view-btn:hover {
+    background-color: var(--gold);
+    color: var(--dark-blue);  
+}
+
+.view-btn:focus {
+    outline: 5px solid var(--gold);
 }
 
 .view-btn:hover,
 .view-btn:focus {
-    border: 5px solid var(--gold);
+    transform: scale(1.1);  
+
 }
 
 .view-btn:active {
@@ -228,9 +240,6 @@ video {
     background-color: var(--dark-blue);
     background: no-repeat 100% 
     url(assets/casserolecodes-banner.png);
-        /* linear-gradient(180deg, */
-         /* #29539b 0%,  */
-         /* #1e3b70 74%); */
     padding: 1em 0 1.5em 0;
     opacity: .85;
 }
